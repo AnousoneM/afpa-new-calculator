@@ -7,34 +7,68 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
 </head>
 
 <body>
 
-    <div class="buttons">
-        <div class="one">1</div>
-        <div class="two">2</div>
-        <div class="three">3</div>
-        <div class="four">4</div>
-        <div class="five">5</div>
-        <div class="six">6</div>
-        <div class="seven">7</div>
-        <div class="eight">8</div>
-        <div class="nine">9</div>
-        <div class="zero">0</div>
-        <div class="plus">+</div>
-        <div class="minus">-</div>
-        <div class="multiply">x</div>
-        <div class="divide">/</div>
-        <div class="point">.</div>
-        <div class="reset">ac</div>
-        <div class="result">=</div>
+    <div class="row justify-content-center align-items-center border border-success vh-100">
+
+        <div class="col-lg-2 col-12 border shadow rounded p-2 calculator">
+
+            <!-- Affichage -->
+            <div class="p-3 screen">
+                <div class="top-screen">
+                    <span id="screenNb1"></span>
+                    <span id="screenOperator"></span>
+                    <span id="screenNb2"></span>
+                </div>
+                <div class="bottom-screen text-end fs-1 fw-bold" id="screenResult"></div>
+            </div>
+
+            <!-- Tous les boutons -->
+            <div class="all-buttons">
+
+                <!-- Boutons du haut -->
+                <div class="row m-0 p-0 top-buttons">
+                    <button class="col-3 btn btn-danger border border-light" data-type="reset">AC</button>
+                    <button class="col-3 btn btn-secondary border border-light" data-type="operator">/</button>
+                    <button class="col-3 btn btn-secondary border border-light" data-type="operator">X</button>
+                    <button class="col-3 btn btn-secondary border border-light" data-type="operator">-</button>
+                </div>
+                <!-- Boutons du milieu -->
+                <div class="row m-0 p-0 middle-buttons">
+                    <div class="row m-0 p-0 col-9 border middle-buttons">
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">7</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">8</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">9</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">4</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">5</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">6</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">1</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">2</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">3</div>
+                        <div class="col-8 btn btn-outline-dark border border-secondary" data-type="number">0</div>
+                        <div class="col-4 btn btn-outline-dark border border-secondary" data-type="number">.</div>
+                    </div>
+                    <!-- boutons de coté -->
+                    <div class="row m-0 p-0 col-3 side-buttons">
+                        <button class="col-12 btn btn-secondary border border-light" data-type="operator">+</button>
+                        <button class="col-12 btn btn-warning border border-light" data-type="result">=</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

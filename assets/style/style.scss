@@ -1,0 +1,21 @@
+body {
+
+    .screen {
+        background-color: rgb(167, 219, 128);
+
+        .top-screen {
+            height: 4rem;
+
+            #screenNb1, #screenNb2 {
+                font-size: 1.2rem;
+            }
+
+            #screenOperator {
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+
+}
